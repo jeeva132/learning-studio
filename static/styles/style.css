@@ -1,0 +1,109 @@
+body {
+  /* background-color: #6741d9; */
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-link {
+  padding: 10px 15px;
+}
+
+.nav-link:hover {
+  background-color: #eee;
+}
+
+.dropdown-menu {
+  background-color: #fff;
+}
+
+.dropdown-item {
+  padding: 10px 15px;
+}
+
+.dropdown-item:hover {
+  background-color: #eee;
+}
+
+.form {
+  position: relative;
+}
+
+.form .fa-search {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #9ca3af;
+}
+
+.form span {
+  position: absolute;
+  right: 17px;
+  top: 13px;
+  padding: 2px;
+  border-left: 1px solid #d1d5db;
+}
+
+.left-pan {
+  padding-left: 7px;
+}
+
+.left-pan i {
+  padding-left: 10px;
+}
+
+.form-input {
+  height: 55px;
+  text-indent: 33px;
+  border-radius: 10px;
+}
+
+.form-input:focus {
+  box-shadow: none;
+  border: none;
+}
+
+.cont3 {
+  padding: 20px 20px;
+  margin: 10px;
+  color: black;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.ch1 {
+  margin-top: 20px;
+}
+
+.path {
+  margin-top: 100px;
+}
+
+.cours {
+  margin-top: 100px;
+}
+
+.top-right-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn-secondary {
+  margin-bottom: 5px;
+}
+
+.btn-primary {
+  margin-bottom: 5px;
+}

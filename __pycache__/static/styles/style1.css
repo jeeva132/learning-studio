@@ -1,0 +1,65 @@
+body {
+  margin-top: 20px;
+  background-color: blueviolet;
+  color: white;
+}
+
+.icons {
+  height: 32px;
+  width: 32px;
+}
+.nav-link:hover {
+  color: black;
+}
+
+.loginb {
+  color: white;
+  background-color: blueviolet;
+  border-radius: 5px;
+  border: 2px solid white;
+  margin-right: 5px;
+  padding: 5px 15px;
+}
+
+.nav-link {
+  color: white;
+}
+
+/* .content-head {
+  margin-top: 50px;
+  background-color: white;
+  margin-left: 50px;
+  margin-right: 50px;
+} */
+.chead1 {
+  margin-top: 50px;
+  background-color: blueviolet;
+  color: black;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px;
+  height: 100%;
+  height: 325;
+}
+
+.chead2 {
+  margin-top: 50px;
+  background-color: white;
+  color: black;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px;
+}
+
+.registerb {
+  color: white;
+  background-color: blueviolet;
+  border-radius: 5px;
+  border: 2px solid white;
+  margin-right: 5px;
+  padding: 5px 15px;
+}
+
+.head1 {
+  color: white;
+}

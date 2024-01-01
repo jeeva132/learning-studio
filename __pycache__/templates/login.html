@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login and Register</title>
+    <!-- Link to Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif; /* Use Poppins font for the whole body */
+        color: #343a40;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .form-section {
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Styling for Login Section */
+      .login-section {
+        background-color: #f9f9f9;
+      }
+
+      /* Styling for Register Section */
+      .register-section {
+        background-color: blueviolet;
+        color: #fff;
+      }
+
+      /* Additional Styling for Register Section */
+      .register-section input[type="text"],
+      .register-section input[type="email"],
+      .register-section input[type="date"],
+      .register-section select,
+      .register-section button {
+        background-color: rgba(255, 255, 255, 0.5);
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+
+      .register-section button {
+        color: #fff;
+        background-color: #8bc34a; /* Light green color */
+        cursor: pointer;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease;
+      }
+
+      .register-section button:hover {
+        background-color: #7cb342; /* Slightly darker light green color on hover */
+      }
+    </style>
+  </head>
+  <body class="form-v10">
+    <div class="container">
+      <!-- Login Section -->
+      <div class="form-section login-section">
+        <form class="form-detail" action="/login" method="post" id="loginForm">
+          <h2>Login</h2>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" class="form-control" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              class="form-control"
+              required
+            />
+          </div>
+          <button
+            type="submit"
+            class="btn btn-primary"
+            style="background-color: blueviolet"
+          >
+            Login
+          </button>
+        </form>
+      </div>
+
+      <!-- Register Section -->
+      <div class="form-section register-section">
+        <form
+          class="form-detail"
+          action="/register"
+          method="post"
+          id="registerForm"
+        >
+          <h2>Register</h2>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" class="form-control" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" class="form-control" required />
+          </div>
+          <div class="form-group">
+            <label for="phone_number">Phone Number</label>
+            <input
+              type="text"
+              name="phone_number"
+              class="form-control"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label>Register As:</label>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="user_type"
+                value="student"
+                id="registerAsstudent"
+                checked
+              />
+              <label class="form-check-label">Student</label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="user_type"
+                value="instructor"
+                id="registerAsInstructor"
+              />
+              <label class="form-check-label">Instructor</label>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              class="form-control"
+              required
+            />
+          </div>
+
+          <button
+            type="submit"
+            class="btn btn-primary"
+            style="background-color: white; color: black"
+          >
+            Register
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
