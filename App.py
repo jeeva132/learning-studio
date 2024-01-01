@@ -297,7 +297,7 @@ db = SQLAlchemy(app)
 class Subscription(db.Model):
     __tablename__ = 'subscriptions'
 
-    subscription_id = db.Column(db.Integer, primary_key=True)
+    subscription_id = db.Column(db.Integer, primary_key=True,autoincrement=True)
     user_id = db.Column(db.Integer, db.ForeignKey('users.user_id'))
     course_id = db.Column(db.Integer, db.ForeignKey('courses.course_id'))
     subscription_date = db.Column(db.DateTime, default=datetime.utcnow)
@@ -309,7 +309,7 @@ class Subscription(db.Model):
 class User(db.Model):
     __tablename__ = 'users'
 
-    user_id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, primary_key=True,autoincrement=True)
     username = db.Column(db.String(255))
     email = db.Column(db.String(255))
     password = db.Column(db.String(255))
@@ -319,14 +319,14 @@ class User(db.Model):
 class Pathway(db.Model):
     __tablename__ = 'pathways'
 
-    pathway_id = db.Column(db.Integer, primary_key=True)
+    pathway_id = db.Column(db.Integer, primary_key=True,autoincrement=True)
     name = db.Column(db.String(255))
     link = db.Column(db.String(255))
 
 class Course(db.Model):
     __tablename__ = 'courses'
 
-    course_id = db.Column(db.Integer, primary_key=True)
+    course_id = db.Column(db.Integer, primary_key=True,autoincrement=True)
     title = db.Column(db.String(255))
     description = db.Column(db.Text)
     instructor_id = db.Column(db.Integer)
